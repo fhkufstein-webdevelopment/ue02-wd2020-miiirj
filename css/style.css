@@ -48,9 +48,54 @@ footer {
     padding-top:20px;
 }
 
+/* Eigene Änderungen */
+.inner, #main {
+    margin: auto;
+    width: 990px;
+}
 
+nav > ul > li > a {
+    font-weight: bold;
+    font-size: 17px;
+}
 
+nav ul, nav li{
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
 
+nav > ul > li {
+	position: relative;
+}
 
+nav a {
+	color:#337ab7;
+    text-decoration: none;
+}
 
+nav ul > li > ul {
+	display: none;
+    position: absolute;
+    background-color: white;
+}
 
+nav ul > li:hover > ul {
+	display: block;
+}
+
+nav ul > li > ul > li {
+	display: block;
+}
+
+nav ul > li a {
+	padding: 10px 20px;
+	display: block;
+	white-space: nowrap;
+}
+
+nav ul > li > ul > li:hover a {
+    background:#337ab7;
+    color: white;
+}
